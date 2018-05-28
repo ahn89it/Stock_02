@@ -21,12 +21,12 @@ def MAL_Function(x):
 
 
 
-# for i in range(1810,2000):
+# for i in range(1841,2267):
 #     print(MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]),i)
 #
 
 index = 1
-for i in range(1810, len(ALL_CODE_LIST.ALL_CODE_LIST)):
+for i in range(1851, len(ALL_CODE_LIST.ALL_CODE_LIST)):
     k=1
     if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > 0) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0.6) ):
         print (ALL_CODE_LIST.ALL_CODE_LIST[i], i, index )
