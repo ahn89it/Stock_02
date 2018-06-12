@@ -12,7 +12,7 @@ def MAL_Function(x):
     array2 = []
     array2.append(int(array[2].replace(",", "")))
     array2.append(int(array[4].replace(",", "")))
-    if(array2[1] > array2[0]):
+    if(array2[1] < array2[0]):
         cal = (array2[1] / array2[0] - 1) * 100
     else:
         cal = 1
@@ -28,7 +28,7 @@ def MAL_Function(x):
 index = 1
 for i in range( len(ALL_CODE_LIST.ALL_CODE_LIST)):
     k=1
-    if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > 0) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0.3) ):
+    if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > -0.5) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0) ):
         print (ALL_CODE_LIST.ALL_CODE_LIST[i], i, index )
         index +=1
 
