@@ -28,7 +28,7 @@ def MAL_Function(x):
 index = 1
 for i in range( len(ALL_CODE_LIST.ALL_CODE_LIST)):
     k=1
-    if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > 0) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0.3) ):
+    if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > 0) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0.26) ):
         print (ALL_CODE_LIST.ALL_CODE_LIST[i], i, index )
         index +=1
 

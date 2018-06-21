@@ -20,15 +20,15 @@ def MAL_Function(x):
     return cal
 
 
-
-# for i in range(560,2400):
+#
+# for i in range(402,2400):
 #     print(MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]),i)
 
 
 index = 1
-for i in range( len(ALL_CODE_LIST.ALL_CODE_LIST)):
+for i in range(1986, len(ALL_CODE_LIST.ALL_CODE_LIST)):
     k=1
-    if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > -0.5) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0) ):
+    if ((MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) > -0.2) & (MAL_Function(ALL_CODE_LIST.ALL_CODE_LIST[i]) <= 0) ):
         print (ALL_CODE_LIST.ALL_CODE_LIST[i], i, index )
         index +=1
 
